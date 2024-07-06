@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Market Analysis Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <header class="header">
+        <div class="container mx-auto text-center">
+            <h1 class="header-title">Crypto Market Analysis Tool</h1>
+            <nav>
+                <ul class="flex justify-center space-x-6">
+                    <li><a href="#" id="home-link" class="hover:underline">Home</a></li>
+                    <li><a href="#" id="trends-link" class="hover:underline">Trends Analysis</a></li>
+                    <li><a href="#" id="sentiment-link" class="hover:underline">Market Sentiment</a></li>
+                    <li><a href="#" id="alerts-link" class="hover:underline">Custom Alerts</a></li>
+                    <li><a href="#" id="wallet-link" class="hover:underline">Wallet</a></li>
+                    <li><a href="#" id="profile-link" class="hover:underline">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto p-6">
+        <section id="home" class="content-section">
+            <h2 class="text-3xl font-bold mb-4">Market Summary</h2>
+            <div id="market-summary" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </section>
+        <section id="trends" class="content-section hidden">
+            <h2 class="text-3xl font-bold mb-4">Trends Analysis</h2>
+            <div id="trends-analysis" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </section>
+        <section id="sentiment" class="content-section hidden">
+            <h2 class="text-3xl font-bold mb-4">Market Sentiment</h2>
+            <div id="market-sentiment" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </section>
+        <section id="alerts" class="content-section hidden">
+            <h2 class="text-3xl font-bold mb-4">Custom Alerts</h2>
+            <div id="custom-alerts" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </section>
+        <section id="wallet" class="content-section hidden">
+            <h2 class="text-3xl font-bold mb-4">Wallet</h2>
+            <div id="wallet-section" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </section>
+        <section id="profile" class="content-section hidden">
+            <h2 class="text-3xl font-bold mb-4">User Profile</h2>
+            <div id="user-profile" class="card"></div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white p-6 text-center">
+        <p>&copy; 2024 Crypto Market Analysis Tool. All rights reserved.</p>
+    </footer>
+    <script src="https://morethanwallet.com/appstore/index.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
